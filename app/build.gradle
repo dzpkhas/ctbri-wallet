@@ -1,0 +1,70 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    defaultConfig {
+        applicationId "cn.hyperchain.hitoken"
+        minSdkVersion 21
+        targetSdkVersion 28
+        versionCode 9
+        versionName "2.1"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+    sourceSets {
+        main {
+            jniLibs.srcDir 'libs'
+            //说明so的路径为该libs路径，关联所有地图SDK的so文件
+        }
+    }
+
+    repositories{
+        flatDir{
+        dirs'libs'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    implementation 'com.android.support:appcompat-v7:28.0.0-alpha3'
+    testImplementation 'junit:junit:4.12'
+    implementation 'cn.bingoogolapple:bga-baseadapter:1.2.7@aar'
+    implementation 'com.android.support:recyclerview-v7:28.0.0-alpha3'
+    androidTestImplementation 'com.android.support.test:runner:1.0.2'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.2'
+    /*----------------------  retrofit http请求配置  ------------------------*/
+    implementation 'com.squareup.retrofit:retrofit:2.0.0-beta2'
+    implementation 'com.squareup.retrofit:retrofit-converters:2.0.0-beta2'
+    implementation 'com.google.code.gson:gson:2.8.0'
+    implementation 'com.squareup.okhttp:logging-interceptor:2.7.5'
+    implementation 'com.squareup.retrofit:converter-gson:2.0.0-beta2'
+    /*----------------------       end        ------------------------*/
+    //butterknife
+    implementation 'com.jakewharton:butterknife:8.8.1'
+    annotationProcessor 'com.jakewharton:butterknife-compiler:8.8.1'
+    implementation 'com.facebook.fresco:fresco:1.1.0'
+    implementation 'com.nostra13.universalimageloader:universal-image-loader:1.9.5'
+    implementation 'commons-codec:commons-codec:20041127.091804'
+    implementation 'de.hdodenhof:circleimageview:2.2.0'
+    implementation 'cn.bingoogolapple:bga-refreshlayout:1.1.8@aar'
+    implementation 'com.google.zxing:core:3.3.3'
+    implementation files('libs/nineoldandroids-2.4.0.jar')
+    implementation 'com.github.bumptech.glide:glide:4.3.1'
+    //    implementation 'com.baoyz.swipemenulistview:library:1.3.0'
+    implementation 'com.baoyz.actionsheet:library:1.1.7'
+    //    implementation 'com.jaeger.statusbarutil:library:1.4.0'
+    implementation files('libs/bcprov-jdk15on-160.jar')
+    implementation files('libs/tbs_sdk_thirdapp_v3.2.0.1104_43200_sharewithdownload_withfilereader_withoutGame_obfs_20170609_115346.jar')
+    implementation 'com.joanzapata.pdfview:android-pdfview:1.0.4@aar'
+    implementation 'com.umeng.sdk:common:1.5.0'
+    implementation 'com.umeng.sdk:utdid:1.1.5.3'
+
+    implementation(name:'businessapilib-release',ext:'aar')
+    implementation project(path: ':mylibrary')
+}

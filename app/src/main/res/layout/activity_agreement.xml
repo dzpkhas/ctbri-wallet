@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_rounded_rectangle">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/housemessage_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:text="服务协议"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16dp"
+                android:text="尊敬的用户:"
+                android:textColor="#DE000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="感谢您选择HiToken服务。《HiToken服务协议》（以下简称“本协议”）由中国电信（以下简称“本公司”）和您（以下简称“用户”）签订，本协议在您与本公司之间具有合同上的法律效力。在本协议中：（1）“我们”和“我们”指代本公司，“我们的”应据此解释；及（2）“您”指代用户，“您的”应据此解释。您和本公司单独称为“一方”，合称为“双方”。"
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="本公司在此特别提醒您在使用我们的HiToken移动应用（以下简称“HiToken” 或“本软件”，HiToken可在各移动应用平台上下载，包括但不限于Google Play和Apple App Store）之前，请认真阅读本协议及后文提及的相关协议，尤其是本协议中“免责及责任限制”等以加粗形式体现的条款，确保您充分理解本协议中各条款，并自主考虑风险。"
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="一、 关于本协议的确认与接纳"
+                android:layout_marginTop="32dp"
+                android:textColor="#DE000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="1. 您理解本协议及有关协议适用于HiToken及HiToken上本公司所自主开发和拥有的去中心化应用（简称“DApp”）（排除第三方开发的DApp）。 "
+                android:textColor="#8A000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="2. 您下载HiToken软件并创建身份、恢复身份（定义见下文）或导入钱包，即视为您已经充分阅读并接受本协议全部条款，本协议立即生效，对双方具有约束力。 如果您不同意本协议条款，您应立即停止使用HiToken。如果您已经下载了HiToken，请立即删除。"
+                android:textColor="#8A000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="3. 在访问或使用HiToken时, 您同意：\n（1）接受本协议最新版本的约束（不变更亦不修改）；\n（2）在您所适用的司法管辖区域内，您已达到使用HiToken的法定年龄，并可承担因使用HiToken而产生的有约束力法律或金钱义务；\n（3）您不属于被排除人士（如本协议所定义）。"
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="4. 本协议可由本公司随时更新，经修改的协议一经在HiToken上公布，立即自动生效，不再另行通知。在本公司公布修改协议条款后，如果您不接受修改后的条款，请立即停止使用HiToken，您继续使用HiToken将被视为接受修改后的协议。 "
+                android:textColor="#8A000000"/>
+
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

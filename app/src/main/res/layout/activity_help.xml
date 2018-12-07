@@ -1,0 +1,148 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:id="@+id/root"
+    tools:context=".activity.SettingActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:orientation="horizontal"
+        android:background="@drawable/bg_rounded_rectangle">
+
+        <LinearLayout
+            android:layout_marginTop="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+            <LinearLayout
+                android:id="@+id/ll_back"
+                android:layout_width="wrap_content"
+                android:gravity="center_vertical"
+                android:orientation="vertical"
+                android:layout_height="match_parent">
+                <ImageView
+                    android:id="@+id/iv_back"
+                    android:layout_width="16dp"
+                    android:layout_height="16dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="10dp"
+                    android:scaleType="fitXY"
+                    android:src="@mipmap/housemessage_back" />
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="26dp"
+                android:text="帮助"
+                android:textColor="@color/white"
+                android:textSize="20dp"/>
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="16dp">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:textSize="16dp"
+                android:text="显示转账失败, 但是扣除了矿工费？"
+                android:textColor="#DE000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="只要该交易被矿工打包过, 就会消耗 gas, 但是由于打包失败, 或者区块验证失败 (包括 Gas 费用不足、调用错误合约方法等)，会导致矿工费消耗，以及退 回转账金额.\nPS: 矿工费由矿工收取，HiToken 目前并不会收取转账手续费。"
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="交易所提币到 HiToken 长时间未到账？"
+                android:layout_marginTop="32dp"
+                android:textColor="#DE000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="• 首先交易所提币需要审核，先确认交易所已经发出交易，若交易所没有发出交易，让前往交易平台与相关人员联系。 "
+                android:textColor="#8A000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="• 然后你可以前往 Etherscan 查询交易是否成功 https://etherscan.io(支持以太系并且符合 ERC-20 标准的代币)"
+                android:textColor="#8A000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="• 然后你可以前往 Etherscan 查询交易是否成功 https://etherscan.io(支持以太系并且符合 ERC-20 标准的代币) "
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="• 其次一些交易所虽然提示交易成功, 只是代表交易所已发送该交易信息到 链上, 接下来需要等待矿工打包, 矿工打包成功确认该交易后, 才可认定为 该交易成功, 如果你已联系了交易所确定该交易已经打出, 但是未在 Etherscan 上查询到该交易的信息, 那么即代表矿工还未打包该次交易。 "
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text="• 如果已经距离交易所发币过了很久的时间, 并且在 Etherscan 上依然查询 不到该交易的任何信息的话, 那么有可能这条交易已经被遗弃, 请及时联系 发币的交易所或发币的第三方平台, 再重新发送一次交易。"
+                android:textColor="#8A000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:text=" • 最后如果你已在 Etherscan 上查询到该交易记录, 但是未在 HiToken 当中 显示, 那么你可以在资产页下拉刷新，若刷新依旧没有(token 首先要打开一键添加资产的开关)，或者创建一个新钱包，尝试切换钱包;网络慢的情况，尝试切换到移动网络。"
+                android:textColor="#8A000000"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="16dp"
+                android:text="私钥泄露, 钱包被盗, 能请求冻结账户吗？"
+                android:layout_marginTop="32dp"
+                android:textColor="#DE000000"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:textSize="12dp"
+                android:layout_marginBottom="24dp"
+                android:text="如果你发生了这样的情况, 首先我们深表同情, 在向我们寻求帮助之前, 有几点情况需要和你如实说明: 1. HiToken 是去中心化钱包. 我们不保管你的私钥, 所以我们无法实现冻结账户或交易回滚这样的操作。 2. HiToken 是去中心化钱包, 我们没有存储用户的实名信息, 所以我们可能无法提供对案件有利的证据 3. 在向我们寻求帮助时, 一定要如实说明情况, 切勿有隐瞒推卸等情况, 否则不利于案件的进展。"
+                android:textColor="#8A000000"/>
+
+        </LinearLayout>
+    </ScrollView>
+
+
+
+</LinearLayout>

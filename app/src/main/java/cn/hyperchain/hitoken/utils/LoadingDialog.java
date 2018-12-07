@@ -1,0 +1,29 @@
+package cn.hyperchain.hitoken.utils;
+
+/**
+ * Created by Administrator on 2017/2/28.
+ */
+
+import android.app.Dialog;
+import android.content.Context;
+import android.os.Bundle;
+
+import cn.hyperchain.hitoken.R;
+
+
+public class LoadingDialog extends Dialog {
+
+    public LoadingDialog(Context context) {
+        super(context, R.style.loadingDialogStyle);
+    }
+
+    private LoadingDialog(Context context, int theme) {
+        super(context, theme);
+    }
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.dialog_loading);
+    }
+}

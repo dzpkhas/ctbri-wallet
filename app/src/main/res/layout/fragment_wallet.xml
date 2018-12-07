@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/white"
+    android:id="@+id/root"
+    tools:context=".fragment.maintab.dapp.DappFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_rectangle"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:orientation="horizontal">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginTop="20dp">
+
+                <LinearLayout
+                    android:id="@+id/ll_personal_center"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:id="@+id/iv_personal_center"
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="10dp"
+                        android:layout_marginStart="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/personal_center" />
+                </LinearLayout>
+
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerInParent="true"
+                    android:text="钱包"
+                    android:textColor="@color/white"
+                    android:textSize="20dp" />
+
+                <LinearLayout
+                    android:id="@+id/ll_address_book"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentEnd="true"
+                    android:gravity="center_vertical"
+                    android:orientation="vertical">
+
+                    <ImageView
+                        android:layout_width="16dp"
+                        android:layout_height="16dp"
+                        android:layout_centerVertical="true"
+                        android:layout_marginEnd="20dp"
+                        android:layout_marginStart="20dp"
+                        android:scaleType="fitXY"
+                        android:src="@mipmap/address_book" />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:id="@+id/ll_create_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="100dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+            <ImageView
+                android:layout_width="93dp"
+                android:layout_height="88dp"
+                android:src="@mipmap/wallet" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                android:textSize="11dp"
+                android:text="您的钱包还是空的，赶紧创建一个吧"
+                android:textColor="@color/white"/>
+
+            <TextView
+                android:id="@+id/tv_create_wallet"
+                android:layout_width="match_parent"
+                android:layout_height="45dp"
+                android:layout_marginTop="48dp"
+                android:layout_marginHorizontal="50dp"
+                android:background="@mipmap/create_wallet"
+                android:gravity="center"
+                android:text="免费创建钱包"
+                android:textColor="#FF0881E2"
+                android:textSize="15dp" />
+        </LinearLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_btc"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="50dp"
+            android:background="@mipmap/btc"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_btc_number"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_btc_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/number" />
+
+                <TextView
+                    android:id="@+id/tv_btc_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:gravity="center_vertical"
+                    android:text="0.0000"
+                    android:textColor="#FF345CE7"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_btc_gathering"
+                    android:layout_width="116dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="18dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_btc_gathering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="7dp"
+                        android:drawableStart="@mipmap/gathering"
+                        android:gravity="center"
+                        android:text="收款"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_btc_payment"
+                    android:layout_width="116dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="18dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_btc_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="7dp"
+                        android:drawableStart="@mipmap/payment"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:id="@+id/rl_eth"
+            android:layout_width="match_parent"
+            android:layout_height="175dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="36dp"
+            android:background="@mipmap/eth"
+            android:visibility="gone">
+
+            <LinearLayout
+                android:id="@+id/ll_eth_number"
+                android:layout_width="wrap_content"
+                android:layout_height="60dp"
+                android:layout_marginStart="128dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center_vertical"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:id="@+id/iv_eth_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/number" />
+
+                <TextView
+                    android:id="@+id/tv_eth_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="10dp"
+                    android:text="0.0000"
+                    android:textColor="#FF345CE7"
+                    android:textSize="40dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_alignParentBottom="true"
+                android:layout_marginBottom="6dp"
+                android:orientation="horizontal">
+
+                <LinearLayout
+                    android:id="@+id/ll_eth_gathering"
+                    android:layout_width="116dp"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="18dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_eth_gathering"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="7dp"
+                        android:drawableStart="@mipmap/gathering"
+                        android:gravity="center"
+                        android:text="收款"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+                </LinearLayout>
+
+
+                <View
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1" />
+
+                <LinearLayout
+                    android:id="@+id/ll_eth_payment"
+                    android:layout_width="116dp"
+                    android:layout_height="60dp"
+                    android:layout_marginEnd="18dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/tv_eth_payment"
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:drawablePadding="7dp"
+                        android:drawableStart="@mipmap/payment"
+                        android:gravity="center"
+                        android:text="发送"
+                        android:textColor="@color/white"
+                        android:textSize="15dp" />
+
+                </LinearLayout>
+
+
+            </LinearLayout>
+        </RelativeLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:id="@+id/iv_add_wallet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:src="@mipmap/add_wallet"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="8dp"
+        android:layout_marginBottom="7dp"/>
+    
+</RelativeLayout>

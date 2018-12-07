@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/bg_create_wallet_rounded_rectangle"
+    android:orientation="vertical"
+    android:layout_height="wrap_content">
+
+   
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="22dp"
+        android:layout_marginStart="24dp"
+        android:orientation="vertical">
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="确定退出登录吗"
+            android:textSize="16dp"
+            android:textStyle="bold"
+            android:textColor="#FF000000"/>
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"/>
+
+        <TextView
+            android:id="@+id/tv_cancel"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#FF9B9B9B"
+            android:text="取消"/>
+
+
+        <TextView
+            android:id="@+id/tv_submit"
+            android:layout_width="65dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="20dp"
+            android:textSize="13dp"
+            android:gravity="center"
+            android:textColor="#FF0B81E7"
+            android:text="确认"/>
+
+    </LinearLayout>
+
+</LinearLayout>

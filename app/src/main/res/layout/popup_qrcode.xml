@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@color/transparency"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_white_rounded_rectangle"
+        android:orientation="vertical"
+        android:gravity="center_horizontal"
+        android:layout_marginTop="40dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="108dp"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/tv_account"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:layout_marginStart="26dp"
+                android:layout_marginEnd="60dp"
+                android:singleLine="true"
+                android:text="yeudhkdskandhdjewuaolakxndgaja"
+                android:textColor="#FF4A4A4A"
+                android:textSize="11dp"/>
+
+            <ImageView
+                android:id="@+id/iv_copy"
+                android:layout_alignParentEnd="true"
+                android:layout_marginEnd="32dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/copy"/>
+
+        </RelativeLayout>
+        
+        <LinearLayout
+            android:layout_marginTop="26dp"
+            android:layout_marginBottom="26dp"
+            android:layout_width="190dp"
+            android:layout_height="190dp"
+            android:orientation="horizontal"
+            android:background="@mipmap/qrcode_bg">
+
+            <ImageView
+                android:id="@+id/iv_qrcode"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_margin="10dp"
+                />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/iv_headimg"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:src="@mipmap/personal_center_headimg" />
+
+    <TextView
+        android:id="@+id/tv_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/iv_headimg"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:text="QuLian"
+        android:textColor="#FF222328"
+        android:textSize="16dp"/>
+
+
+</RelativeLayout>

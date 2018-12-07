@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    android:background="@color/white"
+    android:orientation="vertical"
+    tools:context=".activity.LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="254dp"
+        android:orientation="horizontal"
+        android:gravity="center_horizontal"
+        android:background="@mipmap/login_bg">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@mipmap/login_logo"
+            android:layout_marginTop="106dp"
+            />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+        
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@mipmap/account"/>
+
+        <EditText
+            android:id="@+id/et_account"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="32dp"
+            android:inputType = "phone"
+            android:singleLine="true"
+            android:imeOptions="actionNext"
+            android:nextFocusForward="@+id/et_password"
+            android:hint="请输入已经验证手机号"
+            android:textColorHint="#FFD5D5D5"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFDFDFDF"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="30dp">
+    </View>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="51dp"
+        android:layout_marginStart="38dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="19dp"
+            android:layout_height="19dp"
+            android:src="@mipmap/password"/>
+
+        <EditText
+            android:id="@+id/et_password"
+            android:layout_width="match_parent"
+            android:layout_height="25dp"
+            android:textColor="@color/black"
+            android:background="@color/white"
+            android:gravity="center_vertical"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="32dp"
+            android:singleLine="true"
+            android:inputType="textPassword"
+            android:hint="请输入密码"
+            android:textColorHint="#FFD5D5D5"
+            android:textSize="13dp"/>
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#FFDFDFDF"
+        android:layout_marginStart="72dp"
+        android:layout_marginEnd="30dp">
+    </View>
+    
+    <TextView
+        android:id="@+id/tv_login"
+        android:layout_width="match_parent"
+        android:layout_height="45dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginTop="40dp"
+        android:textSize="15dp"
+        android:elevation="1dp"
+        android:gravity="center"
+        android:textColor="#FFFFFF"
+        android:background="@mipmap/bg_login"
+        android:text="登录"/>
+
+    <TextView
+        android:id="@+id/tv_register"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:text="快速注册"
+        android:textColor="#FF1B73E7"
+        android:gravity="center"
+        android:textSize="15dp"/>
+</LinearLayout>
