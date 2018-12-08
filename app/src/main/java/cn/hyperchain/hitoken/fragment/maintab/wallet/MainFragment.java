@@ -265,7 +265,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 //                                cardSysResult.getCareerKey();
                                 ble.creatSeed(password);
                                 //临时
-                                cardSysResult.setEncryptedSeed("12312312312313");
+                                cardSysResult.setEncryptedSeed("123123123123131");
                                 cardMngIfs.submitSeed(phoneNum, ICCID, cardSysResult.getEncryptedSeed(), new CardMngIfs.AnsyCallback<String>(){
                                     @Override
                                     public void AnsyLoader(String loder, String Url) {
