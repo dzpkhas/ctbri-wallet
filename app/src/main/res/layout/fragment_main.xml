@@ -102,6 +102,45 @@
             android:text="免费创建钱包"
             android:textColor="#FF0881E2"
             android:textSize="15dp" />
+        <TextView
+            android:id="@+id/tv_reissue_wallet"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:gravity="center"
+            android:text="补卡"
+            android:textColor="#FF0881E2"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/tv_iccid"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:layout_marginTop="48dp"
+            android:text="898603181112712X109"
+            android:hint="iccid"
+            android:textColor="#FF0881E2"
+            android:gravity="center"
+            android:textSize="15dp"
+             />
+
+        <EditText
+            android:id="@+id/tv_phone"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:layout_marginTop="48dp"
+            android:text="17710358115"
+            android:hint="phoneNO."
+            android:textColor="#FF0881E2"
+            android:gravity="center"
+            android:textSize="15dp"
+            />
     </LinearLayout>
 
     <RelativeLayout

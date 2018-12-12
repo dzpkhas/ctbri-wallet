@@ -31,13 +31,7 @@ public class  CardMngIfs<T> {
      * @param Url 访问链接
      * @param ansyCallback 回调接口
      */
-    public void submitInfo(final AnsyCallback<T> ansyCallback){
-        String phone;
-        String idNum;
-        String iccid;
-        phone = "13012345678";
-        idNum = "120104201811160113";
-        iccid = "QQ11WW22EE33RR44TT";
+    public void submitInfo(String phone, String iccid, String idNum, final AnsyCallback<T> ansyCallback){
         final Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -127,7 +121,7 @@ public class  CardMngIfs<T> {
 
 
 
-    public void submitReplaceInfoToSmart(final String phone,final  String iccid,final AnsyCallback3<T> ansyCallback){
+    public void submitReplaceInfoToSmart(final String phone,final  String iccid,final AnsyCallback<T> ansyCallback){
         final Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {
@@ -217,7 +211,7 @@ public class  CardMngIfs<T> {
         public void AnsyLoader(T loder,String Url4);
     }
 
-    public void requestSeedToSmart(final String phone,final  String iccid,final AnsyCallback5<T> ansyCallback){
+    public void requestSeedToSmart(final String phone,final  String iccid,final AnsyCallback<T> ansyCallback){
         final Handler handler = new Handler() {
             @Override
             public void handleMessage(Message msg) {

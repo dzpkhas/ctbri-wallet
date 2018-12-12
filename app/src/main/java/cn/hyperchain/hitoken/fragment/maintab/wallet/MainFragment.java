@@ -95,6 +95,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 
 
     private CommonPopupWindow window;
+    private CommonPopupWindow cardReissueWindow;
 
     String accountStr;
 
@@ -126,20 +127,28 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
     private int findCard = 0;
 
     TextView tvPopupSubmit;
+    TextView tvReissueCard;
 
     WalletListFragment walletListFragment;
     CardMngIfs<String> cardMngIfs = new CardMngIfs<>();
     String phoneNum = "13012345678";
-    String ICCID = "QQ11WW22EE33RR44TT";
+    String iccid = "QQ11WW22EE33RR44TT";
+    String idNum = "120104201811160113";
 
+    String carrierKey;       //运营商密码
+    String encyptedSeed;    //加密后种子
 
+    Boolean getEncryptedSeed_done = true;
+    Boolean getCarrierKey_done = true;
     @Override
     public void initViews(View rootView) {
         super.initViews(rootView);
         setView(R.layout.fragment_main);
+
         ButterKnife.bind(this, rootView);
         hideActionBar();
         initPopupWindow();
+        initCardReissueWindow();
         walletListFragment = new WalletListFragment();
     }
 
@@ -232,11 +241,17 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 final EditText edPasswordVerify = view.findViewById(R.id.et_password_verify);
                 tvPopupSubmit = view.findViewById(R.id.tv_submit);
                 TextView tvCancel = view.findViewById(R.id.tv_cancel);
+                //演示
+//                final EditText etPhoneNum = view.findViewById(R.id.tv_phone);
+//                final EditText etIccid = view.findViewById(R.id.tv_iccid);
+
+                //演示
 
                 tvPopupSubmit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
-
+//                        phoneNum = etPhoneNum.getText().toString();
+//                        iccid = etIccid.getText().toString();
                         if(findCard == 1) {
                             walletName = etWalletName.getText().toString();
                             password = etPassword.getText().toString();
@@ -263,20 +278,32 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                                 showDialog();
                                 //卡SDK
 //                                cardSysResult.getCareerKey();
-                                ble.creatSeed(password);
-                                //临时
-                                cardSysResult.setEncryptedSeed("123123123123131");
-                                cardMngIfs.submitSeed(phoneNum, ICCID, cardSysResult.getEncryptedSeed(), new CardMngIfs.AnsyCallback<String>(){
+                                //演示
+                                //ble.creatSeed(password);
+                                //得到加密seed
+                                cardSysResult.
+                                        setEncryptedSeed("37F1699B9E5941C66D4AA137DD09161D8E72585F0B16B3A182A555FBC712A6CEBFD557F9415D0B3D895EEF544045FB2748F1A40BF3CB6400FCAA26FA6F463FCF");  //临时
+                                phoneNum = "13012345109";
+                                iccid = "898603181112712X109";
+                                //演示
+
+                                cardMngIfs.submitSeed(phoneNum, iccid, cardSysResult.getEncryptedSeed(), new CardMngIfs.AnsyCallback<String>(){
                                     @Override
-                                    public void AnsyLoader(String loder, String Url) {
+                                    public void AnsyLoader(String loader, String Url) {
                                         JSONObject jsonObject;
                                         try{
-                                            jsonObject = new JSONObject(loder);
+                                            jsonObject = new JSONObject(loader);
                                             if(jsonObject.getString("resCode") == ConstantField.CARDSYS_OK){
+                                                //演示
+//                                                ble.log("双重加密后的SEED：  " + Util.AddSpace(ble.masterkey));
+//                                                生成以太坊公私钥
+//                                                ble.getPublicKey("3C",registerAccountId);
+                                                //演示
 
-                                                ble.log("双重加密后的SEED：  " + Util.AddSpace(ble.masterkey));
-                                                ble.getPublicKey("00",registerAccountId);
-                                                cardSysResult.setEncryptedSeed(ble.masterkey);
+//                                                cardSysResult.setEncryptedSeed(ble.masterkey);
+                                                //向平台上传种子
+
+
                                             }else{
                                                 final AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
                                                         .setTitle("开卡失败")
@@ -350,7 +377,167 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
         };
     }
 
+    //卡SDk
+    private void initCardReissueWindow() {
+        // get the height of screen
+        DisplayMetrics metrics=new DisplayMetrics();
+        getActivity().getWindowManager().getDefaultDisplay().getMetrics(metrics);
+        int screenHeight=metrics.heightPixels;
+        int screenWidth=metrics.widthPixels;
 
+        // create popup window
+        cardReissueWindow = new CommonPopupWindow(getActivity(), R.layout.popup_card_reissue, (int) (screenWidth*0.73), (int) (screenHeight*0.6)) {//设置弹窗的ui和高度宽度
+            @Override
+            protected void initView() {
+                View view = getContentView();
+                final EditText etWalletName = view.findViewById(R.id.reissue_card_password);//补卡密码
+                tvReissueCard = view.findViewById(R.id.reissue_submit);//提交按钮
+                TextView tvCancel = view.findViewById(R.id.reissue_cancel);//取消按钮
+
+                tvReissueCard.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        walletName = etWalletName.getText().toString();
+                        if(findCard == 1) {
+                            if(walletName.isEmpty()) {
+                                showToast("密码不能为空");
+                                return;
+                            }
+                            if(ble.checkSessionStatus()) {
+                                showDialog();
+                                //得到运营商密码
+                                phoneNum = "13012345110";
+                                iccid = "898603181112712X110";
+                                cardMngIfs.submitReplaceInfoToSmart(phoneNum, iccid, new CardMngIfs.AnsyCallback<String>() {
+                                    @Override
+                                    public void AnsyLoader(String loder, String Url4) {
+                                        JSONObject jsonObject;
+                                        try{
+                                            jsonObject = new JSONObject(loder);
+                                            if(jsonObject.getString("resCode") == ConstantField.CARDSYS_OK){
+                                                carrierKey = jsonObject.getString("resmsg");
+                                                getCarrierKey_done = true;
+
+                                                //恢复卡
+                                                if (getCarrierKey_done && getEncryptedSeed_done){
+                                                    recoverCard(encyptedSeed, registerAccountId, etWalletName.getText().toString(), carrierKey);
+                                                }
+
+
+                                            }else{
+                                                final AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
+                                                        .setTitle("卡恢复失败")
+                                                        .setMessage("卡恢复失败，请检查网络或联系客服")
+                                                        .setIcon(R.mipmap.ic_launcher)
+                                                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {//添加"Yes"按钮
+                                                            @Override
+                                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                                dialogInterface.cancel();
+                                                            }
+                                                        }).create();
+                                                alertDialog.show();
+                                            }
+                                        }catch (Exception e){
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                });
+
+                                //得到加密种子
+                                cardMngIfs.requestSeedToSmart(phoneNum, iccid, new CardMngIfs.AnsyCallback<String>() {
+                                    @Override
+                                    public void AnsyLoader(String loder, String Url4) {
+                                        JSONObject jsonObject;
+                                        try{
+                                            jsonObject = new JSONObject(loder);
+                                            if(jsonObject.getString("resCode") == ConstantField.CARDSYS_OK){
+                                                    encyptedSeed = jsonObject.getString("resmsg");
+                                                    getCarrierKey_done = true;
+
+                                                //恢复卡
+                                                if (getCarrierKey_done && getEncryptedSeed_done){
+                                                    recoverCard(encyptedSeed, registerAccountId, etWalletName.getText().toString(), carrierKey);
+                                                }
+
+
+                                            }else{
+                                                final AlertDialog alertDialog = new AlertDialog.Builder(getActivity())
+                                                        .setTitle("卡恢复失败")
+                                                        .setMessage("卡恢复失败，请检查网络或联系客服")
+                                                        .setIcon(R.mipmap.ic_launcher)
+                                                        .setPositiveButton("确定", new DialogInterface.OnClickListener() {//添加"Yes"按钮
+                                                            @Override
+                                                            public void onClick(DialogInterface dialogInterface, int i) {
+                                                                dialogInterface.cancel();
+                                                            }
+                                                        }).create();
+                                                alertDialog.show();
+                                            }
+                                        }catch (Exception e){
+                                            e.printStackTrace();
+                                        }
+                                    }
+                                });
+                            } else {
+                                showToast("No device connected!");
+                            }
+                        } else {
+                            showToast("发起重新寻卡...");
+                            showDialog();
+                            cardTimes = 0;
+                            mController.selectCard();
+                        }
+
+
+                    }
+                });
+
+                tvCancel.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        getPopupWindow().dismiss();
+                    }
+                });
+
+            }
+
+            public void recoverCard(String encyptedSeed, String registerAccountId, String userKey, String carrierKey){
+                //恢复种子
+                ble.recoveryKey(userKey, encyptedSeed);
+                //恢复公私钥
+                ble.getPublicKey("3C", registerAccountId);      //以太坊
+                ble.getPublicKey("00", registerAccountId);      //比特币
+            }
+            @Override
+            protected void initEvent() {
+
+            }
+
+            @Override
+            protected void initWindow() {
+                super.initWindow();
+                PopupWindow instance=getPopupWindow();
+                instance.setOnDismissListener(new PopupWindow.OnDismissListener() {
+                    @Override
+                    public void onDismiss() {
+
+                        WindowManager.LayoutParams lp=getActivity().getWindow().getAttributes();
+                        lp.alpha=1.0f;
+                        getActivity().getWindow().clearFlags(WindowManager.LayoutParams.FLAG_DIM_BEHIND);
+                        getActivity().getWindow().setAttributes(lp);
+
+                        //创建钱包结束 关闭蓝牙连接
+                        if(mController != null) {
+                            mController.term();
+                        }
+
+
+                    }
+                });
+            }
+        };
+    }
+    //卡SDK
     @OnClick({
             R.id.tv_create_wallet,R.id.ll_personal_center,R.id.ll_address_book,
             R.id.iv_add_wallet,R.id.root,R.id.fl_content
@@ -374,8 +561,11 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 break;
             case R.id.tv_create_wallet:
                 //卡SDK
+//                View view = getContentView();
+//                final EditText etPhoneNum = view.findViewById(R.id.tv_phone);
+//                final EditText etIccid = view.findViewById(R.id.tv_iccid);
 
-                cardMngIfs.submitInfo(new CardMngIfs.AnsyCallback<String>() {
+                cardMngIfs.submitInfo(phoneNum,iccid, idNum, new CardMngIfs.AnsyCallback<String>() {
                     @Override
                     public void AnsyLoader(String loder, String Url) {
                         JSONObject jsonObject;
@@ -410,8 +600,11 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                             return;
                         }
                         String currentTime = String.valueOf(System.currentTimeMillis());
+
+                        //卡平台
                         //生成种子时用作随机数
-                        registerAccountId = currentTime.substring(currentTime.length()-8);
+//                        registerAccountId = currentTime.substring(currentTime.length()-8);
+                        //卡平台
 
                         ble.conect(bluetooth);
                         showToast("设备连接中...");
@@ -726,7 +919,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                         switch (ble.flag) {
                             //卡SDK
                             case ConstantField.RESULT_CREATSEED:
-                                //加密后的私钥
+                                //加密后的种子
                                 ble.masterkey = Util.hexstr(result.getData(), false)
                                         .substring(4, 132);
                                 //移动到window的确认按钮下了

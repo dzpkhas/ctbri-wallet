@@ -57,6 +57,7 @@ public class Ble {
     public String DATE;
     public String LE;
     public String errmessage = "";
+    //加密种子
     public String masterkey = "";
     public String btcPublicKey = "";
     public String ethPublicKey = "";

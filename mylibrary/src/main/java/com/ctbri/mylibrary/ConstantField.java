@@ -15,7 +15,8 @@ public final class ConstantField {
     public static final int RESULT_PUBLICKEY_ETH = 4;
     public static final int RESULT_SIGNATURE_ETH = 5;
 
-    public static final String CARDSYS_OK = "0";
-    public static final String CARDSYS_ERROR = "1";
+    public static final String CARDSYS_OK = "1";
+    public static final String CARDSYS_ERROR = "0";
+
 
 }
