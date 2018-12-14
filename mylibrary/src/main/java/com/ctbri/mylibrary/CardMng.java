@@ -9,21 +9,6 @@ import org.json.JSONObject;
 import java.util.ArrayList;
 
 public class CardMng {
-    public void checkStatus(String resCode){
-        CardMngIfs<String> cardMngIfs = new CardMngIfs<>();
-
-        cardMngIfs.submitInfo(new CardMngIfs.AnsyCallback<String>() {
-            @Override
-            public void AnsyLoader(String loder, String Url) {
-//                String resCode = null;
-//                //此处UI线程
-//                Log.d("MainActivity",loder+"ffff");
-//                parseJSONWithJSONObject(loder, resCode);
-//                Log.d("MainFragment", resCode);
-
-            }
-        });
-    }
 
     private JSONObject parseJSONWithJSONObject(String jsonData, String resCode){
         JSONObject jsonObject = null;

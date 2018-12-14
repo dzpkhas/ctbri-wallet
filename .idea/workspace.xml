@@ -5,12 +5,13 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CUSTOM_FILTER" value="dzp" />
+    <option name="TOOL_WINDOW_LOG_LEVEL" value="verbose" />
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="2290230e-2fe6-4666-8679-1ce5d3e6b7b0" name="Default" comment="补卡弹出画面">
-      <change beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Gradle__org_apache_commons_io_commonsIO_2_5_0.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_card_reissue.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/app/src/main/res/layout/popup_reissue_card.xml" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/com/ctbri/mylibrary/utils/RSAUtils.java" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/fileHashes.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/fileHashes/resourceHashesCache.bin" />
@@ -22,15 +23,11 @@
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.bin" />
       <change beforePath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" afterPath="$PROJECT_DIR$/.gradle/4.4/taskHistory/taskHistory.lock" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" />
-      <change beforePath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" afterPath="$PROJECT_DIR$/.idea/caches/build_file_checksums.ser" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
+      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/app/build.gradle" afterPath="$PROJECT_DIR$/app/build.gradle" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java" />
       <change beforePath="$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java" afterPath="$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java" />
-      <change beforePath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" afterPath="$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml" />
-      <change beforePath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java" afterPath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java" />
-      <change beforePath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/ConstantField.java" afterPath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/ConstantField.java" />
+      <change beforePath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMng.java" afterPath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMng.java" />
+      <change beforePath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java" afterPath="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -44,27 +41,130 @@
       <ProjectState />
     </projectState>
   </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view />
+      </state>
+    </system>
+  </component>
   <component name="FileEditorManager">
-    <leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
       <file leaf-file-name="MainFragment.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="222">
-              <caret line="531" column="25" lean-forward="true" selection-start-line="531" selection-start-column="25" selection-end-line="531" selection-end-column="25" />
+            <state relative-caret-position="368">
+              <caret line="292" column="96" lean-forward="true" selection-start-line="292" selection-start-column="96" selection-end-line="292" selection-end-column="96" />
               <folding>
+                <element signature="imports" expanded="true" />
                 <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
-                <element signature="e#8341#13243#0" expanded="true" />
-                <element signature="e#10463#12776#0" expanded="true" />
-                <element signature="e#12775#12776#0" expanded="true" />
-                <element signature="e#13242#13243#0" expanded="true" />
-                <element signature="e#13291#13494#0" expanded="true" />
-                <element signature="e#13493#13494#0" expanded="true" />
-                <element signature="e#15388#21325#0" expanded="true" />
-                <element signature="e#16147#18455#0" expanded="true" />
-                <element signature="e#18454#18455#0" expanded="true" />
-                <element signature="e#21324#21325#0" expanded="true" />
-                <element signature="e#23689#26432#0" expanded="true" />
-                <element signature="e#26431#26432#0" expanded="true" />
+                <element signature="e#7058#7059#0" expanded="true" />
+                <element signature="e#7089#7090#0" expanded="true" />
+                <element signature="e#7133#7134#0" expanded="true" />
+                <element signature="e#7165#7166#0" expanded="true" />
+                <element signature="e#32574#32575#0" expanded="true" />
+                <element signature="e#32602#32603#0" expanded="true" />
+                <element signature="e#32655#32656#0" expanded="true" />
+                <element signature="e#32683#32684#0" expanded="true" />
+                <element signature="e#32735#32736#0" expanded="true" />
+                <element signature="e#32763#32764#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Ble.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="8326">
+              <caret line="389" column="19" lean-forward="false" selection-start-line="389" selection-start-column="19" selection-end-line="389" selection-end-column="19" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CommonPopupWindow.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="207">
+              <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseActivity.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/activity/BaseActivity.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="782">
+              <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="BaseFragment.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/BaseFragment.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="437">
+              <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Looper.class" pinned="false" current-in-tab="false">
+        <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/os/Looper.class">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="345">
+              <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+              <folding>
+                <marker date="1531725301498" expanded="false" signature="0:104" ph="/.../" />
+                <marker date="1531725301498" expanded="false" signature="197:208" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="244:250" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="284:295" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="331:337" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="381:392" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="428:434" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="476:487" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="523:529" ph=" }" />
+                <marker date="1531725301498" expanded="true" signature="560:571" ph=" { " />
+                <marker date="1531725301498" expanded="true" signature="607:613" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="650:661" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="697:703" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="745:756" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="792:798" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="836:847" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="883:889" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="941:952" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="988:994" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1018:1029" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1065:1071" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1101:1112" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1148:1154" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1185:1196" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1232:1238" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1274:1285" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1321:1327" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1376:1387" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1423:1429" ph=" }" />
+                <marker date="1531725301498" expanded="false" signature="1459:1470" ph=" { " />
+                <marker date="1531725301498" expanded="false" signature="1506:1512" ph=" }" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="CardSysResult.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="138">
+              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+              <folding>
+                <element signature="e#564#565#0" expanded="true" />
+                <element signature="e#600#601#0" expanded="true" />
+                <element signature="e#658#659#0" expanded="true" />
+                <element signature="e#708#709#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -73,25 +173,8 @@
       <file leaf-file-name="CardMngIfs.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="506">
-              <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-              <folding>
-                <element signature="e#1184#1355#0" expanded="true" />
-                <element signature="e#1354#1355#0" expanded="true" />
-                <element signature="e#3019#3191#0" expanded="true" />
-                <element signature="e#3190#3191#0" expanded="true" />
-                <element signature="e#4853#5025#0" expanded="true" />
-                <element signature="e#5024#5025#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="CommonPopupWindow.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="414">
-              <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="56" />
+            <state relative-caret-position="690">
+              <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -109,7 +192,12 @@
       <find>Url</find>
       <find>phone</find>
       <find>ansyCallback</find>
+      <find>case R.id.tv_create_wallet:</find>
+      <find>cardSysResult</find>
+      <find>log.</find>
+      <find>tvPopupSubmit</find>
       <find>onclick</find>
+      <find>Log.d</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -3133,15 +3221,17 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java" />
+        <option value="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMng.java" />
+        <option value="$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java" />
         <option value="$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="1508" />
-    <option name="y" value="119" />
-    <option name="width" value="1384" />
-    <option name="height" value="716" />
+    <option name="x" value="1596" />
+    <option name="y" value="100" />
+    <option name="width" value="1366" />
+    <option name="height" value="698" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -3183,8 +3273,6 @@
     </navigator>
     <panes>
       <pane id="Scope" />
-      <pane id="Scratches" />
-      <pane id="AndroidView" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -3235,6 +3323,16 @@
               <item name="main" type="462c0819:PsiDirectoryNode" />
               <item name="java" type="462c0819:PsiDirectoryNode" />
               <item name="hitoken" type="462c0819:PsiDirectoryNode" />
+              <item name="ble" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="app" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="hitoken" type="462c0819:PsiDirectoryNode" />
               <item name="fragment" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -3260,10 +3358,47 @@
               <item name="maintab" type="462c0819:PsiDirectoryNode" />
               <item name="wallet" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mylibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mylibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mylibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mylibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="HiToken" type="b2602c69:ProjectViewProjectNode" />
+              <item name="HiToken" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="mylibrary" type="8a07ba80:GradleTreeStructureProvider$GradleModuleDirectoryNode" />
+              <item name="src" type="462c0819:PsiDirectoryNode" />
+              <item name="main" type="462c0819:PsiDirectoryNode" />
+              <item name="java" type="462c0819:PsiDirectoryNode" />
+              <item name="mylibrary" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="AndroidView" />
       <pane id="PackagesPane" />
     </panes>
   </component>
@@ -3272,8 +3407,8 @@
     <property name="android.sdk.path" value="$USER_HOME$/AppData/Local/Android/Sdk" />
     <property name="android.project.structure.last.selected" value="SDK Location" />
     <property name="android.project.structure.proportion" value="0.15" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="device.picker.selection" value="7c46967d" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../BLESIM_SDK" />
+    <property name="device.picker.selection" value="VED0218B13002182" />
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -3443,37 +3578,56 @@
     <frame x="1357" y="-9" width="1938" height="1098" extended-state="6" />
     <editor active="true" />
     <layout>
+      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Android Profiler" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Build Variants" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Logcat" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.27058825" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Captures" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26341203" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.18508583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Build" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Gradle" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.284492" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
-      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Device File Explorer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32941177" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
@@ -3487,28 +3641,435 @@
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
-          <line>579</line>
+          <line>589</line>
           <properties />
           <option name="timeStamp" value="4" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
-          <line>581</line>
+          <line>593</line>
           <properties />
           <option name="timeStamp" value="6" />
         </line-breakpoint>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java</url>
-          <line>46</line>
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
+          <line>287</line>
           <properties />
-          <option name="timeStamp" value="8" />
+          <option name="timeStamp" value="9" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
+          <line>290</line>
+          <properties />
+          <option name="timeStamp" value="10" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
+          <line>293</line>
+          <properties />
+          <option name="timeStamp" value="11" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java</url>
+          <line>253</line>
+          <properties />
+          <option name="timeStamp" value="13" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="9" />
+      <option name="time" value="14" />
     </breakpoint-manager>
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4876">
+          <caret line="277" column="67" lean-forward="false" selection-start-line="277" selection-start-column="67" selection-end-line="277" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#32574#32575#0" expanded="true" />
+            <element signature="e#32602#32603#0" expanded="true" />
+            <element signature="e#32655#32656#0" expanded="true" />
+            <element signature="e#32683#32684#0" expanded="true" />
+            <element signature="e#32735#32736#0" expanded="true" />
+            <element signature="e#32763#32764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8326">
+          <caret line="389" column="19" lean-forward="false" selection-start-line="389" selection-start-column="19" selection-end-line="389" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/activity/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <marker date="1531725301498" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1531725301498" expanded="false" signature="197:208" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="244:250" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="284:295" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="331:337" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="381:392" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="428:434" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="476:487" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="523:529" ph=" }" />
+            <marker date="1531725301498" expanded="true" signature="560:571" ph=" { " />
+            <marker date="1531725301498" expanded="true" signature="607:613" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="650:661" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="697:703" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="745:756" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="792:798" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="836:847" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="883:889" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="941:952" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="988:994" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1018:1029" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1065:1071" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1101:1112" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1148:1154" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1185:1196" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1232:1238" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1274:1285" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1321:1327" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1376:1387" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1423:1429" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1459:1470" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1506:1512" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="23">
+          <caret line="277" column="67" lean-forward="false" selection-start-line="277" selection-start-column="67" selection-end-line="277" selection-end-column="67" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#32574#32575#0" expanded="true" />
+            <element signature="e#32602#32603#0" expanded="true" />
+            <element signature="e#32655#32656#0" expanded="true" />
+            <element signature="e#32683#32684#0" expanded="true" />
+            <element signature="e#32735#32736#0" expanded="true" />
+            <element signature="e#32763#32764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8326">
+          <caret line="389" column="19" lean-forward="false" selection-start-line="389" selection-start-column="19" selection-end-line="389" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/activity/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <marker date="1531725301498" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1531725301498" expanded="false" signature="197:208" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="244:250" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="284:295" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="331:337" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="381:392" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="428:434" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="476:487" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="523:529" ph=" }" />
+            <marker date="1531725301498" expanded="true" signature="560:571" ph=" { " />
+            <marker date="1531725301498" expanded="true" signature="607:613" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="650:661" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="697:703" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="745:756" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="792:798" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="836:847" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="883:889" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="941:952" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="988:994" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1018:1029" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1065:1071" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1101:1112" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1148:1154" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1185:1196" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1232:1238" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1274:1285" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1321:1327" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1376:1387" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1423:1429" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1459:1470" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1506:1512" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.8.1/1de300f9b877d30cea69c2ba84a450549f023ab8/butterknife-8.8.1-sources.jar!/butterknife/internal/DebouncingOnClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="124" column="52" lean-forward="false" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-23">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment_ViewBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="141">
+          <caret line="54" column="0" lean-forward="false" selection-start-line="54" selection-start-column="0" selection-end-line="54" selection-end-column="0" />
+          <folding>
+            <element signature="e#1814#1942#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/WalletFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="309" column="33" lean-forward="false" selection-start-line="309" selection-start-column="33" selection-end-line="309" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/fragment_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/os/Binder.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="501">
+          <caret line="82" column="0" lean-forward="false" selection-start-line="82" selection-start-column="0" selection-end-line="82" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="249">
+          <caret line="270" column="0" lean-forward="true" selection-start-line="270" selection-start-column="0" selection-end-line="270" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#32574#32575#0" expanded="true" />
+            <element signature="e#32602#32603#0" expanded="true" />
+            <element signature="e#32655#32656#0" expanded="true" />
+            <element signature="e#32683#32684#0" expanded="true" />
+            <element signature="e#32735#32736#0" expanded="true" />
+            <element signature="e#32763#32764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/WalletFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="309" column="33" lean-forward="false" selection-start-line="309" selection-start-column="33" selection-end-line="309" selection-end-column="33" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/8.8.1/1de300f9b877d30cea69c2ba84a450549f023ab8/butterknife-8.8.1-sources.jar!/butterknife/internal/DebouncingOnClickListener.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/build/generated/source/apt/debug/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment_ViewBinding.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
+          <folding>
+            <element signature="e#1814#1942#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/res/layout/activity_main.xml">
+      <provider editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="124" column="52" lean-forward="false" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
+        </state>
+      </provider>
+      <provider selected="true" editor-type-id="android-designer2">
+        <state />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="250">
+          <caret line="16" column="51" lean-forward="false" selection-start-line="16" selection-start-column="44" selection-end-line="16" selection-end-column="51" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="403">
+          <caret line="562" column="39" lean-forward="true" selection-start-line="562" selection-start-column="39" selection-end-line="562" selection-end-column="39" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
+            <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#32574#32575#0" expanded="true" />
+            <element signature="e#32602#32603#0" expanded="true" />
+            <element signature="e#32655#32656#0" expanded="true" />
+            <element signature="e#32683#32684#0" expanded="true" />
+            <element signature="e#32735#32736#0" expanded="true" />
+            <element signature="e#32763#32764#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/WalletFragment.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="279">
@@ -3521,7 +4082,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="437">
           <caret line="23" column="0" lean-forward="false" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -3530,22 +4090,7 @@
         <state relative-caret-position="176">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
-            <element signature="e#1814#1942#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="506">
-          <caret line="51" column="21" lean-forward="true" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
-          <folding>
-            <element signature="e#1184#1355#0" expanded="true" />
-            <element signature="e#1354#1355#0" expanded="true" />
-            <element signature="e#3019#3191#0" expanded="true" />
-            <element signature="e#3190#3191#0" expanded="true" />
-            <element signature="e#4853#5025#0" expanded="true" />
-            <element signature="e#5024#5025#0" expanded="true" />
+            <element signature="e#1814#1942#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -3554,39 +4099,137 @@
       <provider editor-type-id="text-editor">
         <state relative-caret-position="336">
           <caret line="124" column="52" lean-forward="false" selection-start-line="124" selection-start-column="52" selection-end-line="124" selection-end-column="52" />
-          <folding />
         </state>
       </provider>
       <provider selected="true" editor-type-id="android-designer2">
         <state />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMng.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="18" column="0" lean-forward="false" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/view/CommonPopupWindow.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="414">
-          <caret line="23" column="56" lean-forward="true" selection-start-line="23" selection-start-column="3" selection-end-line="23" selection-end-column="56" />
+        <state relative-caret-position="207">
+          <caret line="14" column="11" lean-forward="false" selection-start-line="14" selection-start-column="11" selection-end-line="14" selection-end-column="11" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/activity/BaseActivity.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="782">
+          <caret line="58" column="0" lean-forward="false" selection-start-line="58" selection-start-column="0" selection-end-line="58" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/BaseFragment.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="437">
+          <caret line="25" column="17" lean-forward="false" selection-start-line="25" selection-start-column="8" selection-end-line="25" selection-end-column="17" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/os/Looper.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="345">
+          <caret line="26" column="31" lean-forward="false" selection-start-line="26" selection-start-column="31" selection-end-line="26" selection-end-column="31" />
+          <folding>
+            <marker date="1531725301498" expanded="false" signature="0:104" ph="/.../" />
+            <marker date="1531725301498" expanded="false" signature="197:208" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="244:250" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="284:295" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="331:337" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="381:392" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="428:434" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="476:487" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="523:529" ph=" }" />
+            <marker date="1531725301498" expanded="true" signature="560:571" ph=" { " />
+            <marker date="1531725301498" expanded="true" signature="607:613" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="650:661" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="697:703" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="745:756" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="792:798" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="836:847" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="883:889" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="941:952" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="988:994" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1018:1029" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1065:1071" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1101:1112" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1148:1154" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1185:1196" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1232:1238" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1274:1285" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1321:1327" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1376:1387" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1423:1429" ph=" }" />
+            <marker date="1531725301498" expanded="false" signature="1459:1470" ph=" { " />
+            <marker date="1531725301498" expanded="false" signature="1506:1512" ph=" }" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardMngIfs.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="690">
+          <caret line="46" column="0" lean-forward="false" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$USER_HOME$/AppData/Local/Android/Sdk/platforms/android-28/android.jar!/android/util/Log.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="207">
+          <caret line="12" column="40" lean-forward="true" selection-start-line="12" selection-start-column="40" selection-end-line="12" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/ble/Ble.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="8326">
+          <caret line="389" column="19" lean-forward="false" selection-start-line="389" selection-start-column="19" selection-end-line="389" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mylibrary/src/main/java/com/ctbri/mylibrary/CardSysResult.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="138">
+          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+          <folding>
+            <element signature="e#564#565#0" expanded="true" />
+            <element signature="e#600#601#0" expanded="true" />
+            <element signature="e#658#659#0" expanded="true" />
+            <element signature="e#708#709#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/src/main/java/cn/hyperchain/hitoken/fragment/maintab/wallet/MainFragment.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="531" column="25" lean-forward="true" selection-start-line="531" selection-start-column="25" selection-end-line="531" selection-end-column="25" />
+        <state relative-caret-position="368">
+          <caret line="292" column="96" lean-forward="true" selection-start-line="292" selection-start-column="96" selection-end-line="292" selection-end-column="96" />
           <folding>
+            <element signature="imports" expanded="true" />
             <element signature="method#initData#0;class#MainFragment#0" expanded="false" />
-            <element signature="e#8341#13243#0" expanded="true" />
-            <element signature="e#10463#12776#0" expanded="true" />
-            <element signature="e#12775#12776#0" expanded="true" />
-            <element signature="e#13242#13243#0" expanded="true" />
-            <element signature="e#13291#13494#0" expanded="true" />
-            <element signature="e#13493#13494#0" expanded="true" />
-            <element signature="e#15388#21325#0" expanded="true" />
-            <element signature="e#16147#18455#0" expanded="true" />
-            <element signature="e#18454#18455#0" expanded="true" />
-            <element signature="e#21324#21325#0" expanded="true" />
-            <element signature="e#23689#26432#0" expanded="true" />
-            <element signature="e#26431#26432#0" expanded="true" />
+            <element signature="e#7058#7059#0" expanded="true" />
+            <element signature="e#7089#7090#0" expanded="true" />
+            <element signature="e#7133#7134#0" expanded="true" />
+            <element signature="e#7165#7166#0" expanded="true" />
+            <element signature="e#32574#32575#0" expanded="true" />
+            <element signature="e#32602#32603#0" expanded="true" />
+            <element signature="e#32655#32656#0" expanded="true" />
+            <element signature="e#32683#32684#0" expanded="true" />
+            <element signature="e#32735#32736#0" expanded="true" />
+            <element signature="e#32763#32764#0" expanded="true" />
           </folding>
         </state>
       </provider>

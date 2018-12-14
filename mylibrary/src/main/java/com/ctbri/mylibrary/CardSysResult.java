@@ -1,9 +1,9 @@
 package com.ctbri.mylibrary;
 
 public class CardSysResult {
-    public String resCode;          //返回结果
-    public String careerKey;        //运营商密码
-    public String encryptedSeed;    //加密后种子
+    public String resCode = "test";          //返回结果
+    public String careerKey = "test";        //运营商密码
+    public String encryptedSeed = "test";    //加密后种子
 
     public String getResCode() {
         return resCode;

@@ -8,6 +8,7 @@ import android.util.DisplayMetrics;
 import android.util.Log;
 import android.view.Gravity;
 import android.view.View;
+import android.view.ViewGroup;
 import android.view.WindowManager;
 import android.widget.EditText;
 import android.widget.FrameLayout;
@@ -109,7 +110,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 
     private Controller mController = null;
     private Ble ble;
-    private CardSysResult cardSysResult;
+    private CardSysResult cardSysResult = new CardSysResult();
 
 //    public static String accountId ="10000004";
 
@@ -250,6 +251,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 tvPopupSubmit.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        Log.d("dzp PopupWindow 确定按钮", phoneNum.toString() + " " +  iccid);
 //                        phoneNum = etPhoneNum.getText().toString();
 //                        iccid = etIccid.getText().toString();
                         if(findCard == 1) {
@@ -273,20 +275,22 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                                 showToast("两次密码输入不一致");
                                 return;
                             }
-
-                            if(ble.checkSessionStatus()) {
+                            Log.d("dzp checkSessionStatus", "123");
+//                            if(ble.checkSessionStatus()) {
+                              if(true) {
                                 showDialog();
                                 //卡SDK
 //                                cardSysResult.getCareerKey();
                                 //演示
                                 //ble.creatSeed(password);
                                 //得到加密seed
+                                  Log.d("dzp getEncryptedSeed", cardSysResult.getEncryptedSeed());
                                 cardSysResult.
                                         setEncryptedSeed("37F1699B9E5941C66D4AA137DD09161D8E72585F0B16B3A182A555FBC712A6CEBFD557F9415D0B3D895EEF544045FB2748F1A40BF3CB6400FCAA26FA6F463FCF");  //临时
                                 phoneNum = "13012345109";
                                 iccid = "898603181112712X109";
                                 //演示
-
+                                Log.d("dzp getEncryptedSeed", cardSysResult.getEncryptedSeed());
                                 cardMngIfs.submitSeed(phoneNum, iccid, cardSysResult.getEncryptedSeed(), new CardMngIfs.AnsyCallback<String>(){
                                     @Override
                                     public void AnsyLoader(String loader, String Url) {
@@ -294,6 +298,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                                         try{
                                             jsonObject = new JSONObject(loader);
                                             if(jsonObject.getString("resCode") == ConstantField.CARDSYS_OK){
+                                                Log.d("dzp submitSeed", jsonObject.getString("resCode"));
                                                 //演示
 //                                                ble.log("双重加密后的SEED：  " + Util.AddSpace(ble.masterkey));
 //                                                生成以太坊公私钥
@@ -561,10 +566,15 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 break;
             case R.id.tv_create_wallet:
                 //卡SDK
-//                View view = getContentView();
-//                final EditText etPhoneNum = view.findViewById(R.id.tv_phone);
-//                final EditText etIccid = view.findViewById(R.id.tv_iccid);
+                Log.d("dzp 点击免费创建钱包", "123");
+                View view = this.getLayoutInflater().inflate(R.layout.fragment_main, (ViewGroup) null);
+                final EditText etPhoneNum = view.findViewById(R.id.tv_phone);
+                final EditText etIccid = view.findViewById(R.id.tv_iccid);
 
+                phoneNum = etPhoneNum.getText().toString();
+                iccid = etIccid.getText().toString();
+                Log.d("dzp phoneNum", phoneNum + " " + iccid);
+                //得到carrier key
                 cardMngIfs.submitInfo(phoneNum,iccid, idNum, new CardMngIfs.AnsyCallback<String>() {
                     @Override
                     public void AnsyLoader(String loder, String Url) {
@@ -578,7 +588,9 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 
                         try{
                             jsonObject = new JSONObject(loder);
+                            Log.d("dzp resCode", jsonObject.getString("resCode"));
                             if(jsonObject.getString("resCode") == CARDSTATUS0){
+                                //得到carrier key
                                 cardSysResult.setCareerKey(jsonObject.getString("result"));
                             }
                         }catch (Exception e){
@@ -614,6 +626,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                         WindowManager.LayoutParams lp2=getActivity().getWindow().getAttributes();
                         //设置透明度
                         lp2.alpha=0.3f;
+                        Log.d("dzp 弹出window", window.toString());
                         //弹窗位置
                         window.showAtLocation(root, Gravity.CENTER, 0, 0);
                         //背后窗口参数
