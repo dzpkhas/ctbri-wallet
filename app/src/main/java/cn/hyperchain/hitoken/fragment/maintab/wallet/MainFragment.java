@@ -67,6 +67,7 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
+import static cn.hyperchain.hitoken.ble.Util.log;
 import static cn.hyperchain.hitoken.sdk.ConstantField.*;
 
 
@@ -163,6 +164,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 public void run() {
                     if(!mBlueList.contains(bluetoothDevice)){
                         mBlueList.add(bluetoothDevice);
+                        Log.d("dzp", "mBlueList " + mBlueList.toString());
                     }
                 }
             });
@@ -574,7 +576,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
     @OnClick({
             R.id.tv_create_wallet,R.id.ll_personal_center,R.id.ll_address_book,
             R.id.iv_add_wallet,R.id.root,R.id.fl_content, R.id.tv_scan_bluetooth,
-            R.id.tv_pair_bluetooth
+            R.id.tv_pair_bluetooth, R.id.tv_select
 
     })
 
@@ -621,6 +623,19 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 mBLEServiceOperate.setMAC(address);
                 int connect = mBLEServiceOperate.connect(address, mStrProcessKey, 0,"1");
                 Log.d("dzp", "connect " + connect);
+                break;
+            case R.id.tv_select:
+                try {
+                    String SelectApdu="00A404000e636f696e57616c6c657441707001";
+                    log("dzp 发送指令: "+SelectApdu);
+                    String command = mBLEServiceOperate.sendAPDUCommand(SelectApdu, 0);
+                    Log.e("dzp command:", "command:" + command);
+                    log("dzp 返回命令：" + command);
+
+                }catch (Exception e){
+                    e.printStackTrace();
+                    log("发生错误："+e.getMessage());
+                }
                 break;
 
             case R.id.tv_create_wallet:

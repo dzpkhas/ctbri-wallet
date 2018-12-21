@@ -125,6 +125,17 @@
             android:textColor="#FF0881E2"
             android:textSize="15dp" />
         <TextView
+            android:id="@+id/tv_select"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:gravity="center"
+            android:text="选应用"
+            android:textColor="#FF0881E2"
+            android:textSize="15dp" />
+        <TextView
             android:id="@+id/tv_reissue_wallet"
             android:layout_width="match_parent"
             android:layout_height="45dp"
