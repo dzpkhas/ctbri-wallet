@@ -152,6 +152,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
     private BluetoothAdapter adapter;
     protected BLEServiceOperate mBLEServiceOperate;
     public List<BluetoothDevice> mBlueList = new ArrayList<>();
+    private String  mStrProcessKey = "48ad10e64db3b448ebbd66fe546889bc";
 
     private BroadcastReceiver mDiscoveryResult = new BroadcastReceiver(){
         @Override
@@ -592,6 +593,7 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 break;
             case R.id.fl_content:
                 break;
+
                 //dzp sdk
             case R.id.tv_scan_bluetooth:
                 //得到手机蓝牙服务
@@ -615,7 +617,10 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 
                 break;
             case R.id.tv_pair_bluetooth:
-
+                String address = "00:F2:1D:4C:A6:00";
+                mBLEServiceOperate.setMAC(address);
+                int connect = mBLEServiceOperate.connect(address, mStrProcessKey, 0,"1");
+                Log.d("dzp", "connect " + connect);
                 break;
 
             case R.id.tv_create_wallet:
