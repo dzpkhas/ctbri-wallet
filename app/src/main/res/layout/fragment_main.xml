@@ -103,6 +103,28 @@
             android:textColor="#FF0881E2"
             android:textSize="15dp" />
         <TextView
+            android:id="@+id/tv_scan_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:gravity="center"
+            android:text="scan bluetooth"
+            android:textColor="#FF0881E2"
+            android:textSize="15dp" />
+        <TextView
+            android:id="@+id/tv_pair_bluetooth"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginHorizontal="50dp"
+            android:background="@mipmap/create_wallet"
+            android:gravity="center"
+            android:text="test bluetooth"
+            android:textColor="#FF0881E2"
+            android:textSize="15dp" />
+        <TextView
             android:id="@+id/tv_reissue_wallet"
             android:layout_width="match_parent"
             android:layout_height="45dp"

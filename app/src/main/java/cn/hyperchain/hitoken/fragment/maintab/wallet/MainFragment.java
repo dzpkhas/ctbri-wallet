@@ -1,6 +1,11 @@
 package cn.hyperchain.hitoken.fragment.maintab.wallet;
 
 import android.app.AlertDialog;
+import android.bluetooth.BluetoothAdapter;
+import android.bluetooth.BluetoothDevice;
+import android.bluetooth.BluetoothManager;
+import android.content.BroadcastReceiver;
+import android.content.Context;
 import android.content.DialogInterface;
 import android.content.Intent;
 import android.support.v4.app.FragmentTransaction;
@@ -20,10 +25,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.bumptech.glide.Glide;
-import com.ctbri.mylibrary.CardMng;
-import com.ctbri.mylibrary.CardMngIfs;
-import com.ctbri.mylibrary.CardSysResult;
-import com.ctbri.mylibrary.ConstantField;
+
+import cn.com.fmsh.bluetooth.sdk.BLEServiceOperate;
+import cn.com.fmsh.bluetooth.sdk.ServiceStatusCallback;
+import cn.hyperchain.hitoken.sdk.CardMngIfs;
+import cn.hyperchain.hitoken.sdk.CardSysResult;
+import cn.hyperchain.hitoken.sdk.ConstantField;
 import com.google.gson.Gson;
 import com.rthtech.ble.Controller;
 import com.rthtech.ble.Data;
@@ -42,7 +49,6 @@ import cn.hyperchain.hitoken.R;
 import cn.hyperchain.hitoken.activity.AddWalletActivity;
 import cn.hyperchain.hitoken.activity.AddressBookActivity;
 import cn.hyperchain.hitoken.activity.MainActivity;
-import cn.hyperchain.hitoken.activity.MainTabActivity;
 import cn.hyperchain.hitoken.ble.Ble;
 import cn.hyperchain.hitoken.ble.Util;
 import cn.hyperchain.hitoken.ble.key.Keys;
@@ -61,10 +67,10 @@ import retrofit.Callback;
 import retrofit.Response;
 import retrofit.Retrofit;
 
-import static com.ctbri.mylibrary.ConstantField.*;
+import static cn.hyperchain.hitoken.sdk.ConstantField.*;
 
 
-public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Callback {
+public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Callback, ServiceStatusCallback {
 
 
     @BindView(R.id.root)
@@ -141,6 +147,27 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
 
     Boolean getEncryptedSeed_done = true;
     Boolean getCarrierKey_done = true;
+
+    //dzp SDK
+    private BluetoothAdapter adapter;
+    protected BLEServiceOperate mBLEServiceOperate;
+    public List<BluetoothDevice> mBlueList = new ArrayList<>();
+
+    private BroadcastReceiver mDiscoveryResult = new BroadcastReceiver(){
+        @Override
+        public void onReceive(Context context, Intent intent){
+            final BluetoothDevice bluetoothDevice = intent.getParcelableExtra(BluetoothDevice.EXTRA_DEVICE);
+            getActivity().runOnUiThread(new Runnable() {
+                @Override
+                public void run() {
+                    if(!mBlueList.contains(bluetoothDevice)){
+                        mBlueList.add(bluetoothDevice);
+                    }
+                }
+            });
+        }
+    };
+
     @Override
     public void initViews(View rootView) {
         super.initViews(rootView);
@@ -545,7 +572,8 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
     //卡SDK
     @OnClick({
             R.id.tv_create_wallet,R.id.ll_personal_center,R.id.ll_address_book,
-            R.id.iv_add_wallet,R.id.root,R.id.fl_content
+            R.id.iv_add_wallet,R.id.root,R.id.fl_content, R.id.tv_scan_bluetooth,
+            R.id.tv_pair_bluetooth
 
     })
 
@@ -564,6 +592,32 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
                 break;
             case R.id.fl_content:
                 break;
+                //dzp sdk
+            case R.id.tv_scan_bluetooth:
+                //得到手机蓝牙服务
+                final BluetoothManager bluetoothManager = (BluetoothManager) getActivity().getSystemService(Context.BLUETOOTH_SERVICE);
+                if(bluetoothManager != null){
+                    adapter = bluetoothManager.getAdapter();
+                    if (adapter == null || !adapter.isEnabled()) {
+                        Toast.makeText(getActivity(), "请打开蓝牙连接", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+                }
+                //初始化蓝牙
+                mBLEServiceOperate = BLEServiceOperate.getInstance(getActivity().getApplicationContext());
+                if (!this.mBLEServiceOperate.isSupportBLE()) {
+                    Toast.makeText(getActivity(), "无法连接蓝牙", Toast.LENGTH_LONG).show();
+                }
+                mBLEServiceOperate.setServiceStatusCallback(this);
+                mBLEServiceOperate.SetBroadcastReceiverCallBack( mDiscoveryResult );
+                //扫描
+                mBLEServiceOperate.startLeScan();
+
+                break;
+            case R.id.tv_pair_bluetooth:
+
+                break;
+
             case R.id.tv_create_wallet:
                 //卡SDK
                 Log.d("dzp 点击免费创建钱包", "123");
@@ -983,6 +1037,11 @@ public class MainFragment extends BaseBarFragment implements com.rthtech.ble.Cal
             ble.log(e.toString());
             ble.ReSend();
         }
+
+    }
+
+    @Override
+    public void OnServiceStatus(int i) {
 
     }
 }
